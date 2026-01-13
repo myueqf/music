@@ -4,10 +4,21 @@
   <meta charset="UTF-8">
   <title>demo</title>
   <!-- 引入oh-my-live2d -->
-  <script src="live2d/js/live2d.min.js"></script>
+  <script src="../js/live2d.min.js"></script>
 </head>
 <body>
   <!-- 引入配置文件 -->
-  <script src="live2d/js/live2d.config.js"></script>
+  <script>
+  OML2D.loadOml2d({
+    models: [{
+    path: "../live2d/150051_slyx_xydz/150051_slyx_xydz.model.json"
+  }],
+    mobileDisplay: true,  // 允许在手机端显示
+    dockedPosition: "right", // 靠右显示
+    menus: { disable: true },
+    tips: { disable: true },
+    statusBar: { disable: true }
+  });
+  </script>
 </body>
 </html>
